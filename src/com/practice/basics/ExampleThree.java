@@ -1,8 +1,9 @@
 package com.practice.basics;
 
-public class ExampleTwo {
+public class ExampleThree {
 	public static void main(String[] args) {
-		System.out.println("my example two");
+		System.out.println("my example three");
+		
 	}
 
 }
