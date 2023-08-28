@@ -15,7 +15,7 @@ public class Student {
 	     
 	     //logic 
 	    System.out.println("Name: "+name);
-	    System.out.println("Age :"+age);
+	    System.out.println("Age: "+age);
 	    System.out.println("Rollno: "+rollno);
 	    System.out.println("Gender: "+gender);
 	    System.out.println("Phone: "+phone);
