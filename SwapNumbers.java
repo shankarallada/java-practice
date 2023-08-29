@@ -1,6 +1,6 @@
 package com.practice.operators;
 
-public class Arithmetic {
+public class SwapNumbers {
 	public static void main(String[] args) {
 		int a = 50;
 		int b = 100;
