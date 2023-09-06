@@ -12,11 +12,11 @@ public class IfelseLargestNumber {
 		System.out.println("enter the third number");
 		int z = sc.nextInt();
 		if (x > y && x > z) {
-			System.out.println("x is the largest number");
+			System.out.println("the largest number is :"+x);
 		} else if (y > z) {
-			System.out.println("y is the largest number");
+			System.out.println("the largest number is :"+y);
 		} else {
-			System.out.println("z is the largest number");
+			System.out.println("the largest number is :"+z);
 		}
       sc.close();
 	}
