@@ -1,8 +1,15 @@
 package com.practice.beginners.examples;
 
 import java.util.Scanner;
+/*
+ * 10. Write a program to calculate the factorial of a number.
+ * Input:
+ * Enter a number: 5
+ * Output:
+ * The factorial of 5 is: 120
+ */
 
-public class ExampleTen {
+public class FactorialE10 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number : ");
@@ -10,8 +17,8 @@ public class ExampleTen {
 		int fact = 1;
 		for (int i = 1; i <= a; i++) {
 			fact = fact * i;
-			System.out.println("factorial of" + a + "is:" + fact);
 		}
+		System.out.println("factorial of " + a + "is :" + fact);
 
 		sc.close();
 	}
