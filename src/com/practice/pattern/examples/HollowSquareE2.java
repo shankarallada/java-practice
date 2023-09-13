@@ -1,6 +1,17 @@
 package com.practice.pattern.examples;
 
 import java.util.Scanner;
+/*
+ * 2.Print a hollow square pattern of stars using nested loops.
+	Input:
+	Enter the number of rows: 5
+	Output:
+ 	*****
+ 	*   *
+ 	*   *
+ 	*   *
+ 	*****
+ */
 
 public class HollowSquareE2 {
 	public static void main(String[] args) {

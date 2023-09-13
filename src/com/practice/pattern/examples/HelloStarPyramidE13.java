@@ -1,41 +1,38 @@
 package com.practice.pattern.examples;
 
 import java.util.Scanner;
+
 /*
- * 5.Print a diamond pattern of stars using nested loops.
+ * 13. Print hollow star pyramid using nested loops.
 	Input:
 	Enter the number of rows: 5
-	Output:
- 	  *
- 	 ***
- 	*****
- 	 ***
- 	  *
+	Output:	
+ 	    *
+ 	   * *
+ 	  *   *
+ 	 *     *
+ 	*********
  */
-
-public class DiamondE5 {
+public class HelloStarPyramidE13 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
+		System.out.println("Enter the non of rows:");
 		int n = sc.nextInt();
-		int x = n / 2 + 1;
+		int x = n, y = n;
 
 		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if ((j >= x) != false && j <= n - x + 1) {
+			for (int j = 1; j < n * 2; j++) {
+				if (j == x || j == y || i == n) {
 					System.out.print("*");
-
 				} else {
 					System.out.print(" ");
 				}
 
 			}
-			if (i <= n / 2) {
-				x--;
-			} else {
-				x++;
-			}
+			x--;
+			y++;
 			System.out.println();
+
 		}
 		sc.close();
 	}

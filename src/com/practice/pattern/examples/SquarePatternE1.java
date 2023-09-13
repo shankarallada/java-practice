@@ -18,11 +18,11 @@ public class SquarePatternE1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the numbers of rows : ");
 		int n = sc.nextInt();
-		for (int i=1; i<=n; i++) {
-			for (int j=1; j<=n; j++) {
-				System.out.print("*");
+		for (int i=0; i<n; i++) {//navigate next line
+			for (int j=0; j<n; j++) {//complete each row
+				System.out.print("*");//print star in each line
 			}
-			System.out.print("\n");
+			System.out.println("");
 		}
 		sc.close();
 	}

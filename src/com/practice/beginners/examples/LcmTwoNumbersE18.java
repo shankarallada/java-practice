@@ -13,30 +13,21 @@ import java.util.Scanner;
 public class LcmTwoNumbersE18 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a, b, lcm = 0, max, step;
 		System.out.println("Enter the first number : ");
-		a = sc.nextInt();
+		int num1 = sc.nextInt();
 		System.out.println("Enter the second number : ");
-		b = sc.nextInt();
+		int num2 = sc.nextInt();
 
-		if (a > b) {
-			max = step = a;
-		} else {
-			max = step = b;
-		}
-		while (a != 0) {
-			if (max % a == 0 && max % b == 0) {
-				lcm = max;
-				break;
+		int hcf = 0, lcm = 0;// 2*2->4,3*2->6
+		for (int i = 1; i <= num1 || i <= num2; i++) {// i<=4||i<=6->i<=6
+			if (num1 % i == 0 && num2 % i == 0) {// check whether remainder is 0 or not for both numbers
+				hcf = i;// store temporary HCF
 			}
-			max += step;
 		}
-		System.out.println("LCM of "+a+" and "+b+" is : " + lcm);
+		lcm = num1 * num2 / hcf;
+		//System.out.println("HCF of given two numbers is :" + hcf);
+		System.out.println("lcm of given two numbers : " + lcm);
 		sc.close();
-	}
-
-	{
-
 	}
 
 }
