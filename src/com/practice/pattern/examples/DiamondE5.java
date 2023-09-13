@@ -11,6 +11,13 @@ import java.util.Scanner;
  	*****
  	 ***
  	  *
+ 
+  formula:
+  2 spaces ,1 star 
+  1 space , 3 star
+  0 space,  5 star
+  1 space,  3 star
+  2 spaces, 1 star
  */
 
 public class DiamondE5 {
@@ -18,22 +25,23 @@ public class DiamondE5 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of rows : ");
 		int n = sc.nextInt();
-		int x = n / 2 + 1;
 
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if ((j >= x) != false && j <= n - x + 1) {
-					System.out.print("*");
-
-				} else {
+		for (int i = 0; i < n/2+1; i++) {//print 3 lines or n/2+1 lines
+			for (int j=0; j <n-3-i; j++) {//print spaces descending order
 					System.out.print(" ");
-				}
-
 			}
-			if (i <= n / 2) {
-				x--;
-			} else {
-				x++;
+			for(int k=0; k<2*i+1; k++) {//print stars in odd number order
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i=n/2; i >0;i--) { // print 2 lines or n/2 lines
+			for(int j =0; j<n-2-i;j++) {//print spaces ascending order 
+				System.out.print(" ");
+			}
+			for(int k =0;k<2*i-1;k++) {//print stars in reverse odd number order 
+				System.out.print("*");
 			}
 			System.out.println();
 		}
