@@ -19,8 +19,8 @@ public class FlodysTriangleE16 {
 		System.out.println("Enter the number of rows : ");
 		int n = sc.nextInt();
 		int num = 1;
-		for (int i = 1; i <= n; i++) {//navigate next time 
-			for (int j = 1; j <= i; j++) {//complete each line
+		for (int i = 0; i <= n; i++) {//navigate next time 
+			for (int j = 0; j < i; j++) {//complete each line
 				System.out.print(num++ +" ");//print numbers
 			}
 			System.out.println();

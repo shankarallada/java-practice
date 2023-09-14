@@ -21,12 +21,12 @@ public class DiagonalNumberE20 {
 		int n = sc.nextInt();
 
 		for (int i = 1; i <= n; i++) {//navigate next line
-			for (int j = 1; j < i; j++) {// 
+			for (int j = 1; j < i; j++) {//print zeroes in upper case 
 				System.out.print("0 ");
 			}
 			System.out.print(i + " ");
-			for (int k = i; k < n; k++) {
-				System.out.print(" ");
+			for (int k = i; k < n; k++) {//print zeroes in down case
+				System.out.print("0 ");
 			}
 			System.out.println();
 		}
