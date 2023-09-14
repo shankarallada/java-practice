@@ -19,8 +19,8 @@ public class HollowSquareE2 {
 		System.out.println("Enter the number of rows : ");
 		int n = sc.nextInt();
 
-		    for (int i = 1; i <= n; i++ ) {
-		      for (int j = 1 ; j <= n; j++ ){
+		    for (int i = 1; i <= n; i++ ) {//navigate next line
+		      for (int j = 1 ; j <= n; j++ ){//complete each line
 		        if (i ==1 || i == n || j == 1 || j == n ){
 		          System.out.print("*");
 		        }

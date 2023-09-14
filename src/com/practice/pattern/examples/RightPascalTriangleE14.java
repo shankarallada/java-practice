@@ -1,6 +1,20 @@
 package com.practice.pattern.examples;
 
 import java.util.Scanner;
+/*
+ * 14. Print Right Pascal’s Triangle using nested loops.
+	Input:
+	Enter the number of rows: 4
+	Output:
+ 	*
+ 	* *
+ 	* * *
+ 	* * * *
+ 	* * *
+ 	* *
+ 	*
+
+ */
 
 public class RightPascalTriangleE14 {
 	public static void main(String[] args) {
@@ -8,9 +22,9 @@ public class RightPascalTriangleE14 {
 		System.out.println("enter the number of rows : ");
 		int n = sc.nextInt();
 
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j <= i; j++) {
-				System.out.print("* ");
+		for (int i = 0; i < n; i++) {//navigate next line
+			for (int j = 0; j <= i; j++) {//complete each line 
+				System.out.print("* ");//print * each line 
 			}
 			System.out.println();
 		}

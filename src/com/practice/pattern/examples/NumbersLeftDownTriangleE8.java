@@ -18,9 +18,9 @@ public class NumbersLeftDownTriangleE8 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of rows : ");
 		int n = sc.nextInt();
-		for (int i=1;i<=n;i++) {
-			for (int j=1;j<n-i+2;j++) {
-				System.out.print(j+"");
+		for (int i=1;i<=n;i++) {//navigate next line
+			for (int j=1;j<n-i+2;j++) {//complete each line
+				System.out.print(j+"");//print numbers in each line
 			}
 			System.out.println();
 			sc.close();
