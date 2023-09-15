@@ -2,8 +2,8 @@ package com.practice.pattern.examples;
 
 //import java.util.Scanner;
 /*
- *  1 
-    1 2 
+ * 	1 
+	1 2 
 	1 2 3 
 	1 2 3 4 
 	1 2 3 4 5 
@@ -16,7 +16,7 @@ public class PatternExample1 {
 		//int n = sc.nextInt();
 		
 		int n=5; 
-		for(int i=1; i<=n; i++) {
+		for(int i=0; i<=n; i++) {
 			for(int j=1; j<=i;j++) {
 				System.out.print(j+" ");
 			}
