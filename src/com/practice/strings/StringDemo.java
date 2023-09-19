@@ -30,9 +30,41 @@ public class StringDemo {
 		
 		//6.substring 
 		String name8 = "savalapuram shivakumar";
-		System.out.println(name8.substring(17));//mention start index
-		System.out.println(name8.substring(12));
-		System.out.println(name8.substring(0, 11));//mention both start and end index
+		//System.out.println(name8.substring(17));//mention start index
+		//System.out.println(name8.substring(12));
+		//System.out.println(name8.substring(0, 11));//mention both start and end index
+		
+		//7.searching
+		//System.out.println(name8.indexOf("shiva")>0);
+		//System.out.println(name8.contains("shiva"));
+
+		//8.splitting
+		String name9= "Shiva@Shankar@Talapatra";
+	    String[] names=name9.split("@");
+		for (String na : names) {
+			//System.out.print(na);
+		}
+
+
+		//9.UPPER CASE & LOWER CASE
+		String upper=name9.toUpperCase();
+		String lower=name9.toLowerCase();
+		//System.out.println(upper);
+		//System.out.println(lower);
+
+		//10.trimming
+		String tr=name9.trim();
+		//System.out.println(tr);
+
+		//11.Start or End
+		boolean isStart=name9.startsWith("Sh");
+		//System.out.println(isStart);
+		boolean isEnd=name9.endsWith("tra");
+		//System.out.println(isEnd);
+
+		//12.char at
+		char ch=name9.charAt(5);
+		//System.out.println(ch);
 	}
 
 }
