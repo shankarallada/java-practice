@@ -15,9 +15,9 @@ public class ConcatenateTwoStringsE7 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the first string: ");
-		String c=sc.next();
+		String c=sc.nextLine();
 		System.out.println("Enter the second string: ");
-		String d=sc.next();
+		String d=sc.nextLine();
 		
 		String name=c.concat(d);
 		System.out.println(name);

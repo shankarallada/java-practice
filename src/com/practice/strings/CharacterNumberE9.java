@@ -14,7 +14,7 @@ public class CharacterNumberE9 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string: ");
-		String c =sc.next();
+		String c =sc.nextLine();
 		System.out.println("Enter a charater: ");
 		int d = sc.nextInt();
 		char ch = c.charAt(d);

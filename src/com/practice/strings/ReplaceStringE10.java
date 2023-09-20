@@ -15,11 +15,11 @@ public class ReplaceStringE10 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string: ");
-		String a = sc.next();
+		String a = sc.nextLine();
 		System.out.println("Enter the character to replace: ");
-		String b = sc.next();
+		String b = sc.nextLine();
 		System.out.println("Enter the new character: ");
-		String c = sc.next();
+		String c = sc.nextLine();
 		
 		String d=a.replace(b, c);
 		System.out.println("The new string is : "+d);

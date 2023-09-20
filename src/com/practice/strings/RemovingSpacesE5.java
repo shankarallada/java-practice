@@ -14,7 +14,7 @@ public class RemovingSpacesE5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string: ");
-		String c = sc.next();
+		String c = sc.nextLine();
 
 		String[] name = c.split(" ");
 		for (String str : name) {
