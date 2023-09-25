@@ -1,16 +1,16 @@
 package com.practice.arrays;
 
 import java.util.Scanner;
-/*
- * 2.Write a program to find the maximum element in an array.
+
+/* 8.Write a program to find the average of all elements in an array.
 	Input:
 	Enter the length of the array: 5
-	Enter the array elements: 10 5 20 25 15
+	Enter the array elements: 10 20 30 40 50
 	Output:
-	The maximum element is 25
+	The average of all elements in array is 30.0
  */
 
-public class MaximumElementE2 {
+public class AverageElementsE8 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the length of the array: ");
@@ -21,14 +21,12 @@ public class MaximumElementE2 {
 			array[i] = sc.nextInt();
 		}
 
-		int max = array[0];
-		for (int i = 1; i < n; i++) {
-			if (array[i]> max)
-			{
-				max = array[i];
-			}
+		int sum = 0;
+		for (int i = 0; i < array.length; i++) {
+			sum =sum + array[i];
 		}
-		System.out.println("the maximum element is " + max);
+		double average = sum / array.length;
+		System.out.println(" the average of all elements in array: " + average);
 		sc.close();
 	}
 
