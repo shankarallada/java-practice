@@ -21,7 +21,9 @@ public class FrequencyElementsE13 {
 		for(int i=0;i<n;i++) {
 			array[i]=sc.nextInt();
 		}
+		for(int i=0;i<array.length;i++) {
+			
+		}
 		
 	}
-
 }

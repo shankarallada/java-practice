@@ -18,25 +18,39 @@ public class RemoveElementE10 {
 		System.out.println("Enter the length of the element: ");
 		int n = sc.nextInt();
 		System.out.println("Enter the array elements: ");
-		int[] array = new int[n];
+		int[] originalArray = new int[n];
 		for (int i = 0; i < n; i++) {
-			array[i] = sc.nextInt();
+			originalArray[i] = sc.nextInt();
 		}
-		System.out.println("Enter the element to be removd: ");
+		System.out.println("Enter the element to be removed: ");
 		int element = sc.nextInt();
 
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] == element) {
-				for (int j = i; j < array.length - 1; j++) {
-					array[j] = array[j + 1];
-				}
+		int indexToRemove = -1;
+		for (int i = 0; i < originalArray.length; i++) {
+			if (originalArray[i] == element) {
+				indexToRemove = i;
 				break;
 			}
 		}
-		System.out.println("array after removing " + element);
-		for (int i = 0; i < array.length - 1; i++) {
-			System.out.print(array[i] + " ");
+
+		if (indexToRemove != -1) {
+			int[] newArray = new int[n - 1];
+			int j = 0;
+			for (int i = 0; i < originalArray.length; i++) {
+				if (i != indexToRemove) {
+					newArray[j] = originalArray[i];
+					j++;
+				}
+			}
+
+			for (int i = 0; i < newArray.length; i++) {
+				System.out.println(newArray[i]);
+			}
+
+		} else {
+			System.out.println("Element not found");
 		}
 		sc.close();
 	}
+
 }

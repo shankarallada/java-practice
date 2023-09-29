@@ -22,11 +22,9 @@ public class ReverseAnArrayE7 {
 			array[i]= sc.nextInt();
 		}
 		
-		int rev=array[0];
-		for(int i=n-1;i>=0;i--) {
-			rev=rev+array[n];
-			System.out.println(rev);
-			
+		int s=array.length;
+		for(int i=s-1;i>=0;i--) {
+			System.out.print(array[i]+" ");			
 		}
 		sc.close();
 	}
