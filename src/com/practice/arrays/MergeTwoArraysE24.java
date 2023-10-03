@@ -1,6 +1,5 @@
 package com.practice.arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -20,31 +19,49 @@ public class MergeTwoArraysE24 {
 		System.out.println("Enter the length of the 1st array: ");
 		int n = sc.nextInt();
 		System.out.println("Enter the array elements:");
-		int arr[] = new int[n];
+		int arr1[] = new int[n];
 
 		for (int i = 0; i < n; i++) {
-			arr[i] = sc.nextInt();
+			arr1[i] = sc.nextInt();
 		}
 		System.out.println("Enter the length of the 2nd array: ");
 		int m = sc.nextInt();
 		System.out.println("Enter the array elements:");
-		int arr1[] = new int[m];
+		int arr2[] = new int[m];
 
 		for (int j = 0; j < m; j++) {
-			arr1[j] = sc.nextInt();
+			arr2[j] = sc.nextInt();
 		}
-		int size1 = arr.length;
-		int size2 = arr1.length;
+		int size1 = arr1.length;
+		int size2 = arr2.length;
 
-		int arr2[] = new int[size1 + size2];
+		int output[] = new int[size1 + size2];
 
-		System.arraycopy(arr, 0, arr2, 0, size1);
-		System.arraycopy(arr1, 0, arr2, size1, size2);
-		Arrays.sort(arr2);
-		System.out.println(Arrays.toString(arr));
-		System.out.println(Arrays.toString(arr1));
-		System.out.println("Merged array: " + Arrays.toString(arr2));
+		int i = 0, j = 0, k = 0;
+		while (i < arr1.length && j < arr2.length) {
+			if (arr1[i] < arr2[j]) {
+				output[k] = arr1[i];
+				k++;
+				i++;
+			} else {
+				output[k] = arr2[j];
+				j++;
+				k++;
+			}
+		}
+		while (j < arr2.length) {
+			output[k] = arr2[j];
+			k++;
+			j++;
+		}
+		while (j < arr2.length) {
+			output[k] = arr1[i];
+			k++;
+			i++;
+		}
+		for (int p = 0; p < output.length; p++) {
+			System.out.print("Merged array: "+output[p]+" ");
+		}
 		sc.close();
 	}
-
 }
