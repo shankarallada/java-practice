@@ -12,6 +12,10 @@ import java.util.Scanner;
  */
 
 public class AverageofNumbersE6 {
+	public double calculateAverage(double x, double y, double z) {
+		double average =(x+y+z)/3;
+		return average;
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in) ;
 		System.out.println("Enter the first number :");
@@ -20,8 +24,9 @@ public class AverageofNumbersE6 {
 		double y =sc.nextDouble();
 		System.out.println("Enter the third number :");
 		double z =sc.nextDouble();
-		double average =(x+y+z)/3;
-		System.out.println("the average of"+ x +","+ y + "and "+ z + " numbers :"+average);
+		AverageofNumbersE6 obj = new AverageofNumbersE6();
+		double average=obj.calculateAverage(x, y, z);
+		System.out.println("the average of"+ x +","+ y + " and "+ z + " numbers :"+average);
 		sc.close();
 	}
 

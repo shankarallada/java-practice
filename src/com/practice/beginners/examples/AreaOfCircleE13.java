@@ -10,13 +10,19 @@ import java.util.Scanner;
  */
 
 public class AreaOfCircleE13 {
+	public double calculateArea(double r) {
+		double pi = 3.142;
+		double area;
+		area = pi * r * r;
+		return area;
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the radius of the circle: ");
 		double r = sc.nextDouble();
-		double pi = 3.142;
-		double area;
-		area = pi * r * r;
+		AreaOfCircleE13 obj = new AreaOfCircleE13();
+		double area = obj.calculateArea(r);
 		System.out.println("The area of circle is : " + area);
 		sc.close();
 	}
