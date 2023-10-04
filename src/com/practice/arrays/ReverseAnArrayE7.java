@@ -22,9 +22,14 @@ public class ReverseAnArrayE7 {
 			array[i]= sc.nextInt();
 		}
 		
-		int s=array.length;
-		for(int i=s-1;i>=0;i--) {
-			System.out.print(array[i]+" ");			
+		System.out.println("Before");
+		for(int i=1;i<=n;i++) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		System.out.println("After");
+		for (int k =array.length-1; k >=0; k--) {
+			System.out.print(+array[k]+" ");
 		}
 		sc.close();
 	}
