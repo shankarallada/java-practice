@@ -10,19 +10,24 @@ import java.util.Scanner;
  */
 
 public class FibonacciNmbersE12 {
+	public int fibNum(int n) {
+	int  a = 0 , b = 0 , c = 1;
+	for (int i = 1; i <= n; i++) {
+		a = b;
+		b = c;
+		c = a + b;
+		System.out.print(a + " ");
+	}
+		return a;
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the numbers of terms : ");
 		int n = sc.nextInt();
-		int i, a = 0, b = 0, c = 1;
-		for (i = 1; i <= n; i++) {
-			a = b;
-			b = c;
-			c = a + b;
-			System.out.print(a + " ");
-		}
-
+		
+		FibonacciNmbersE12 obj = new FibonacciNmbersE12();
+		int a = obj.fibNum(n);
+		System.out.println();
 		sc.close();
 	}
-
 }

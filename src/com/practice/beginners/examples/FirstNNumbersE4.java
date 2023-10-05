@@ -10,16 +10,22 @@ import java.util.Scanner;
  */
 
 public class FirstNNumbersE4 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number :");
-		int a = sc.nextInt();
+	public int naturalNumbers(int a) {
 		int sum = 0;
 		int i = 1;
 		while (i <= a) {
 			sum = sum + i;
 			i++;
 		}
+		return sum;
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number :");
+		int a = sc.nextInt();
+		FirstNNumbersE4 obj = new FirstNNumbersE4();
+		int sum=obj.naturalNumbers(a);
 		System.out.println("sum of " + a + " natural numbers is :" + sum);
 		sc.close();
 	}
