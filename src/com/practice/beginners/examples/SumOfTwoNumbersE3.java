@@ -13,14 +13,19 @@ import java.util.Scanner;
  */
 
 public class SumOfTwoNumbersE3 {
+	public int twoNumbersSum(int first, int second) {
+		int sum = first + second;
+		return sum;
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the first number :");
 		int first = sc.nextInt();
 		System.out.println("Enter the second number :");
 		int second = sc.nextInt();
-		int sum = first + second;
-		System.out.println("the sum of "+first+" and "+second+" is:"  + sum);
+		SumOfTwoNumbersE3 obj = new SumOfTwoNumbersE3();
+		int output = obj.twoNumbersSum(first, second) ;
+		System.out.println("the sum of "+first+" and "+second+" is: "  + output);
 		sc.close();
 	}
 

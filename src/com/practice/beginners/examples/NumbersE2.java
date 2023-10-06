@@ -11,15 +11,22 @@ import java.util.Scanner;
  */
 
 public class NumbersE2 {
+	public int firstNumbers(int n) {
+		for (int i = 1; i <= n; i++) {
+			//System.out.print(i + " ");
+			
+		}
+		return n;
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number :");
 		int n = sc.nextInt();
-		int i;
-		for (i = 1; i <= n; i++) {
-			System.out.print(i + " ");
-		}
-	sc.close();
+		NumbersE2 obj =new NumbersE2();
+		int output = obj.firstNumbers(n);
+		System.out.println(output);
+			sc.close();
 	}
 
 }

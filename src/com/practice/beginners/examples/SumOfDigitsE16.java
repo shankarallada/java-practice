@@ -12,15 +12,21 @@ import java.util.Scanner;
  */
 
 public class SumOfDigitsE16 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number : ");
-		int n =sc.nextInt();
+	public int digitsSum(int n) {
 		long sum;
 		for (sum=0; n!=0; n=n/10) {
 			sum = sum+n%10;
 		}
-			System.out.println("the sum of digits : "+sum);
+		return (int) sum;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		int n =sc.nextInt();
+		SumOfDigitsE16 obj = new SumOfDigitsE16();
+		int output = obj.digitsSum(n);
+			System.out.println("the sum of digits : "+output);
 
 	sc.close();
 	}

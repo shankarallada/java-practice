@@ -10,16 +10,22 @@ import java.util.Scanner;
  *  sum of squares = 55
  */
 public class SquaresE20 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter n :");
-		int n = sc.nextInt();
+	public int Eachsquares(int n) {
 		int i = 0,sum =0;
 		while(i<=n) {
 			sum+= i*i;
 			i++;
 		}
-		System.out.println("sum of squares : "+sum);
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter n :");
+		int n = sc.nextInt();
+		SquaresE20 obj = new SquaresE20();
+		int output = obj.Eachsquares(n);
+		System.out.println("sum of squares : "+output);
 		sc.close();
 	}
 }
