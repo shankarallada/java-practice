@@ -21,11 +21,7 @@ spaces =n-1-i->5-1-0=4->5-1-1=3->5-1-2=2->5-1-3=1->5-1-4=0
  */
 
 public class PyramidE6 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-
+	public void starPyramid(int n) {
 		for (int i = 0; i < n; i++) {// Navigate to next line
 			for (int j = 0; j < n - 1 - i; j++) {// print spaces
 				System.out.print(" ");// print spaces in same row
@@ -37,6 +33,13 @@ public class PyramidE6 {
 		}
 
 		System.out.println();
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		PyramidE6 obj = new PyramidE6();
+		obj.starPyramid(n);		
 		sc.close();
 	}
 

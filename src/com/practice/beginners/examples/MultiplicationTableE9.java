@@ -20,11 +20,21 @@ import java.util.Scanner;
  */
 
 public class MultiplicationTableE9 {
+	public int tableMul(int a ) {
+		int mul=0;
+		for (int i = 1; i <= 10; i++) {
+
+		}
+		return mul;
+		
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number : ");
 		int a = sc.nextInt();
-		for (int i = 1; i <= 10; i++) {
+		MultiplicationTableE9 obj = new MultiplicationTableE9();
+		int output = obj.tableMul(a);
+		for(int i=1;i<10;i++) {
 			System.out.println(a+" * " +i+ " = "+a*i);
 		}
 		sc.close();

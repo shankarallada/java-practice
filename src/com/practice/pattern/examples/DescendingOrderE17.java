@@ -15,17 +15,22 @@ import java.util.Scanner;
  */
 
 public class DescendingOrderE17 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-
+	public void orderDescending(int n) {
 		for (int i = n; i >= 1; i--) {//navigate next line 
 			for (int j = n; j >= i; j--) {//print descending order numbers 
 				System.out.print(j+" ");
 			}
 			System.out.println();
 		}
+	//	return n;
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		DescendingOrderE17 obj = new DescendingOrderE17();
+		obj.orderDescending(n);
 		sc.close();
 	}
 

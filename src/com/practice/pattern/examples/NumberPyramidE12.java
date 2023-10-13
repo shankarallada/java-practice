@@ -14,10 +14,7 @@ import java.util.Scanner;
  */
 
 public class NumberPyramidE12 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows: ");
-		int n = sc.nextInt();
+	public void pyramidNumber(int n) {
 		int z = 1;
 		for (int i = 0; i < n; i++) {
 			for (int j = n - 1; j > i; j--) {
@@ -29,6 +26,13 @@ public class NumberPyramidE12 {
 			z+=2;
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		NumberPyramidE12 obj = new NumberPyramidE12();
+		obj.pyramidNumber(n);
 		sc.close();
 	}
 

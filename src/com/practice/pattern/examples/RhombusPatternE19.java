@@ -14,11 +14,7 @@ import java.util.Scanner;
  */
 
 public class RhombusPatternE19 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-		
+	public void patternRhombus(int n) {
 		for(int i =0; i<n;i++) {//navigate next line
 			for(int j=0; j<n-i;j++) {//print spaces each line
 				System.out.print(" ");
@@ -28,6 +24,13 @@ public class RhombusPatternE19 {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		RhombusPatternE19 obj = new RhombusPatternE19();
+		obj.patternRhombus(n);	
 		sc.close();
 	}
 

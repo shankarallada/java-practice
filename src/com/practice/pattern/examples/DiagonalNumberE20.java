@@ -15,21 +15,26 @@ import java.util.Scanner;
  */
 
 public class DiagonalNumberE20 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-
-		for (int i = 1; i <= n; i++) {//navigate next line
-			for (int j = 1; j < i; j++) {//print zeroes in upper case 
+	public void numberDiagonal(int n) {
+		for (int i = 1; i <= n; i++) {// navigate next line
+			for (int j = 1; j < i; j++) {// print zeroes in upper case
 				System.out.print("0 ");
 			}
 			System.out.print(i + " ");
-			for (int k = i; k < n; k++) {//print zeroes in down case
+			for (int k = i; k < n; k++) {// print zeroes in down case
 				System.out.print("0 ");
 			}
 			System.out.println();
 		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		DiagonalNumberE20 obj = new DiagonalNumberE20();
+		obj.numberDiagonal(n);
+
 		sc.close();
 	}
 }

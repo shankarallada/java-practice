@@ -15,11 +15,7 @@ import java.util.Scanner;
  */
 
 public class PalindromicNumberE18 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-
+	public void numberPalindrome(int n) {
 		for (int i = 1; i <= n; i++) {
 			for (int j = n - i; j >= 1; j--) {
 				System.out.print(" ");
@@ -32,6 +28,13 @@ public class PalindromicNumberE18 {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		PalindromicNumberE18 obj = new PalindromicNumberE18();
+		obj.numberPalindrome(n);
 		sc.close();
 	}
 }

@@ -14,10 +14,7 @@ import java.util.Scanner;
 	11 12 13 14 15
  */
 public class FlodysTriangleE16 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
+	public void triangleFlody(int n) {
 		int num = 1;
 		for (int i = 0; i <= n; i++) {//navigate next time 
 			for (int j = 0; j < i; j++) {//complete each line
@@ -25,6 +22,13 @@ public class FlodysTriangleE16 {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		FlodysTriangleE16 obj = new FlodysTriangleE16();
+		obj.triangleFlody(n);
 		sc.close();
 	}
 

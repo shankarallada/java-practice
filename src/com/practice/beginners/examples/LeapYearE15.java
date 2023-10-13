@@ -12,7 +12,7 @@ public class LeapYearE15{
 	public boolean yearLeap(int year) {
 		if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
 			
-		}else {
+		}else { 
 			
 		}
 		return year==0;
@@ -23,7 +23,7 @@ public class LeapYearE15{
 		int year = sc.nextInt();
 		LeapYearE15 obj = new LeapYearE15();
 		if(obj.yearLeap(year)) {
-			System.out.println(year + " is not a leap year.");
+			System.out.println(year + " is  not a leap year.");
 		} else {
 			System.out.println(year + " is  a leap year.");
 		}
