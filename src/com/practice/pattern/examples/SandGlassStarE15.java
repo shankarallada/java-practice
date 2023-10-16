@@ -17,11 +17,7 @@ import java.util.Scanner;
  */
 
 public class SandGlassStarE15 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
-
+	public void glassSand(int n) {
 		for (int i = 0; i <= n - 1; i++) {// navigate next line
 			for (int j = 0; j < i; j++) {// print spaces
 				System.out.print(" ");
@@ -40,6 +36,13 @@ public class SandGlassStarE15 {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		SandGlassStarE15 obj = new SandGlassStarE15();
+		obj.glassSand(n);
 		sc.close();
 	}
 

@@ -14,16 +14,20 @@ import java.util.Scanner;
  */
 
 public class TriangleShapeNumbersE7 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows : ");
-		int n = sc.nextInt();
+	public void shapeNumberTriangle(int n) {
 		for (int i=1; i<=n; i++) {//navigate next line
 			for (int j=1; j<=i; j++) {//complete each line
 				System.out.print(i);//print i value in each line
 			}
 			System.out.println(" ");//print spaces 
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		TriangleShapeNumbersE7 obj = new TriangleShapeNumbersE7();
+		obj.shapeNumberTriangle(n);
 		sc.close();
 
 	}

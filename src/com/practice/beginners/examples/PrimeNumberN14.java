@@ -10,13 +10,7 @@ import java.util.Scanner;
  * 2 3 5 7 11 13 17
  */
 public class PrimeNumberN14 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the value of n :");
-		int n = sc.nextInt();
-		// 2->1,2->p
-		// 3->1,3->p
-		// 4->1,2,4->Np
+	public void numberPrime(int n) {
 		int count = 0;
 		int num = 2;
 		boolean isPrime = false;
@@ -34,7 +28,17 @@ public class PrimeNumberN14 {
 			}
 			num++;
 		}
-
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of n :");
+		int n = sc.nextInt();
+		// 2->1,2->p
+		// 3->1,3->p
+		// 4->1,2,4->Np
+		PrimeNumberN14 obj = new PrimeNumberN14();
+		obj.numberPrime(n);
+		sc.close();
 	}
 
 }

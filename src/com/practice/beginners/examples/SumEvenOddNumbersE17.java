@@ -12,31 +12,26 @@ import java.util.Scanner;
  */
 
 public class SumEvenOddNumbersE17 {
-	public boolean isEvenoddsum(int num) {
-		int i;
-		for ( i = 1; i <=num; i++) {
-			if (i % 2 == 0) {
+	public void isEvenOdd(int num) {
+		int i = 1, evensum = 0, oddsum = 0;
+		for (i = 1; i <=num; i++) {
+			if (i%2==0) {
+				evensum = evensum + i;
+			} else {
+				oddsum = oddsum + i;
 			}
 			}
-		return i==0;
-		}
+		System.out.println("the sum of even numbers upto " + num + " is : " + evensum);
+		System.out.println("the sum of odd numbers upto " + num + " is : " + oddsum);
+	}
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a limit : ");
 		int num = sc.nextInt();
-		int i = 1, evensum = 0, oddsum = 0;
 		SumEvenOddNumbersE17 obj = new SumEvenOddNumbersE17();
-		//for (i = 1; i <=num; i++) {
-		//	if (obj.isEvenoddsum(num)) {
-				evensum = evensum + i;
-			//} else {
-				oddsum = oddsum + i;
-			}
-			//}
-	//	System.out.println("the sum of even numbers upto " + num + " is : " + evensum);
-		//System.out.println("the sum of odd numbers upto " + num + " is : " + oddsum);
-		//sc.close();
+		obj.isEvenOdd(num);
+		sc.close();
 	}
 
-//}
+}
