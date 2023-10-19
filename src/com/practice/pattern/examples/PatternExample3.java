@@ -1,6 +1,6 @@
 package com.practice.pattern.examples;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 /*
  *  1
 	12	
@@ -15,11 +15,7 @@ package com.practice.pattern.examples;
  */
 
 public class PatternExample3 {
-	public static void main(String[] args) {
-		//Scanner sc = new Scanner(System.in);
-		//System.out.println("Enter the number of rows : ");
-		//int n = sc.nextInt();
-		int n=5;
+	public void pattern3(int n) {
 		for (int i=1; i<=n; i++) {
 			for(int j=1; j<=i; j++) {
 				System.out.print(j);
@@ -32,7 +28,14 @@ public class PatternExample3 {
 			}
 			System.out.println();
 		}
-       //sc.close();
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int n = sc.nextInt();
+		PatternExample3 obj = new PatternExample3();
+		obj.pattern3(n);
+       sc.close();
 	}
 
 }

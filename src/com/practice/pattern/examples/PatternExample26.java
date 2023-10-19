@@ -10,24 +10,25 @@ import java.util.Scanner;
  */
 
 public class PatternExample26 {
+	public void pattern26(int n) {
+		for (int i = n; i >= 1; i--) {
+			for (int j = i; j < n; j++) {
+				System.out.print(j + " ");
+			}
+
+			for (int k = n - i; k < n; k++) {
+				System.out.print(5 + " ");
+			}
+			System.out.println();
+		}
+	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows ");
-        int rows = sc.nextInt();
-        
-        for (int i = rows; i >= 1; i--)
-        {
-            for (int j = i; j < rows; j++)
-            {
-                System.out.print(j + " ");
-            }
-
-            for (int k = rows - i; k < rows; k++)
-            {
-                System.out.print(5 + " ");
-            }
-            System.out.println();
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample26 obj = new PatternExample26();
+		obj.pattern26(n);
+		sc.close();
 	}
-        sc.close();
- }
 }

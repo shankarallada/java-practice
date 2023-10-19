@@ -10,15 +10,7 @@ import java.util.Scanner;
  */
 
 public class PatternExample30 {
-	public static void main(String[] args) {
-		// Create a new Scanner object
-		Scanner sc = new Scanner(System.in);
-
-		// Get the number of rows from the user
-		System.out.println("Enter the number of rows: ");
-
-		int n = sc.nextInt();
-		
+	public void pattern30(int n) {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j % 2 == 0)
@@ -28,6 +20,13 @@ public class PatternExample30 {
 			}
 			System.out.println(" ");
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample30 obj = new PatternExample30();
+		obj.pattern30(n);
 		sc.close();
 	}
 }
