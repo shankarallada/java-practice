@@ -11,13 +11,10 @@ import java.util.Scanner;
 
 public class PatternExample37 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows: ");
-		int rows = sc.nextInt();
-		for (int i = 1; i <= rows; i++) {
+	public void example37(int n) {
+		for (int i = 1; i <= n; i++) {
 			int j = (i * 2) - 1;
-			for (int k = i; k <= rows; k++) {
+			for (int k = i; k <= n; k++) {
 				System.out.print(j + " ");
 				j += 2;
 			}
@@ -26,6 +23,14 @@ public class PatternExample37 {
 			}
 			System.out.println();
 		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample37 obj = new PatternExample37();
+		obj.example37(n);
 		sc.close();
 	}
 }

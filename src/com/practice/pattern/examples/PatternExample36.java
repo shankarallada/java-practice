@@ -10,10 +10,8 @@ import java.util.Scanner;
  */
 
 public class PatternExample36 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of rows: ");
-		int n = sc.nextInt();
+
+	public void example36(int n) {
 		for (int i = 1; i <= n; i++) {
 			int j = (i * 2) - 1;
 			for (int k = 1; k <= n; k++) {
@@ -24,6 +22,15 @@ public class PatternExample36 {
 			}
 			System.out.println();
 		}
+
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample36 obj = new PatternExample36();
+		obj.example36(n);
 		sc.close();
 	}
 }

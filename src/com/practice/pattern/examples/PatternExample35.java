@@ -11,15 +11,9 @@ import java.util.Scanner;
 
 public class PatternExample35 {
 
-	public static void main(String[] args) {
-		// Create a new Scanner object
-		Scanner sc = new Scanner(System.in);
-
-		// Get the number of rows from the user
-		System.out.println("Enter the number of rows to print the pattern ");
-		int rows = sc.nextInt();
-		for (int i = 1; i <= rows; i++) {
-			for (int j = i; j <= rows; j++) {
+	public void example35(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (int j = i; j <= n; j++) {
 				System.out.print(j + " ");
 			}
 			for (int k = i - 1; k >= 1; k--) {
@@ -27,6 +21,14 @@ public class PatternExample35 {
 			}
 			System.out.println();
 		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample35 obj = new PatternExample35();
+		obj.example35(n);
 		sc.close();
 	}
 }

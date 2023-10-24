@@ -10,27 +10,26 @@ import java.util.Scanner;
  */
 
 public class PatternExample34 {
-
-	public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the number of rows to print the pattern ");
-
-        int rows = sc.nextInt();        
-        for (int i = 1; i <= rows; i++)
-        {
-            int j = i;
-            
-            for (int k = 1; k <= rows; k++) 
-            { 
-                System.out.print(j + " "); 
-                j++; 
-                if (j > rows)
-                    j = 1;
-            }
-            System.out.println();
-        }
-        sc.close();
-    }
+	
+	public void example34(int n) {
+		for (int i = 1; i <= n; i++) {
+			int j = i;
+			for (int k = 1; k <= n; k++) {
+				System.out.print(j + " ");
+				j++;
+				if (j > n)
+					j = 1;
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows: ");
+		int n = sc.nextInt();
+		PatternExample34 obj = new PatternExample34();
+		obj.example34(n);
+		sc.close();
+	}
 }
