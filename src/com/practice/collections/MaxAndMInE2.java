@@ -2,7 +2,7 @@ package com.practice.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 /*
  * 2.Write a program to find the maximum and minimum element in an ArrayList.
@@ -16,27 +16,33 @@ import java.util.Collections;
 
 public class MaxAndMInE2 {
 	public static void main(String[] args) {
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("Enter the number of elements: ");
-//		int n = sc.nextInt();
-//		System.out.println("Enter the array elememts: ");
-//		int[] ArrayList = new int[n];
-//		for (int i = 0; i < n; i++) {
-//			ArrayList[i] = sc.nextInt();
-//		}
-		
-		ArrayList maxMin = new ArrayList();
-		maxMin.add(40);
-		maxMin.add(50);
-		maxMin.add(30);
-		maxMin.add(10);
-		maxMin.add(20);
-		System.out.println(maxMin);
-		
-		System.out.println("Maximum Element: " +Collections.max(maxMin));
-		System.out.println("minimum element: "+Collections.min(maxMin));
-	    
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of elements: ");
+		int n = sc.nextInt();
+		System.out.println("Enter the arraylist elememts: ");
+		ArrayList list = new ArrayList();
+		for (int i = 0; i < n; i++) {
+			list.add(sc.nextInt());
+		}
+		int min=(int) list.get(0); //type casting
+		int max=(int) list.get(0);
+		for (Object object : list) {
+			int number=(int)object;
+			if(max<number) {
+				max=number;
+			}
+			if(min>number) {
+				min=number;
+			}
+		}
+		System.out.println("maximum number: "+max);
+		System.out.println("minimum number: "+min);
+		//System.out.println(Collections.max(list));
+		//System.out.println(Collections.min(list));
+		System.out.println(list);
+		Collections.reverse(list);
+		System.out.println(list);
+		sc.close();
 	}
 
 }
