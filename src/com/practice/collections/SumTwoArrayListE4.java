@@ -26,13 +26,20 @@ public class SumTwoArrayListE4 {
 		ArrayList list2 = new ArrayList();
 		list2.add(40);
 		list2.add(50);
-		list2.add(60);
+		//list2.add(60);
 		System.out.println(list2);
 		
+		if(list1.size()!=list2.size()) {
+			System.out.println("Arraylists are not of the same size");
+			return ;
+		}
+		ArrayList sumList = new ArrayList();
 		for(int i=0;i<list1.size();i++) {
 			int sum = (int) list1.get(i)+ (int)list2.get(i);
-			System.out.println(sum);
+			sumList.add(sum);
 		}
+		System.out.println(sumList);
+		sc.close();
 	}
 
 }

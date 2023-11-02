@@ -1,6 +1,7 @@
 package com.practice.collections;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /*
  * 5.Write a program to remove duplicates from an ArrayList.
@@ -12,19 +13,24 @@ import java.util.ArrayList;
 
 public class RemoveDuplicatesE5 {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of elements: ");
+		int size = sc.nextInt();
+		System.out.println("Enter the elements: ");
 		ArrayList list = new ArrayList();
-		list.add(10);
-		list.add(20);
-		list.add(30);
-		list.add(20);
-		list.add(40);
-		list.add(30);
-		list.add(50);
+		for (int i = 0; i < size; i++) {
+			list.add(sc.nextInt());
+		}
 		System.out.println(list);
-		list.remove(3);
-		list.remove(4);
-		System.out.println(list);
-		
+		ArrayList list2 = new ArrayList();
+		for (int i = 0; i < list.size(); i++) {
+			int currentElement = (int) list.get(i);
+			if (!list2.contains(currentElement)) {
+				list2.add(currentElement);
+			}
+		}
+		System.out.println(list2);
+		sc.close();
 	}
 
 }
