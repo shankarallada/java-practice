@@ -1,9 +1,10 @@
 package com.practice.collections;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 /*
- * Write a program to remove the first element from a LinkedList
+ *8. Write a program to remove the first element from a LinkedList
 	Input:
 	[10 20 30 40 50]
 	Output:
@@ -11,14 +12,16 @@ import java.util.LinkedList;
  */
 public class RemoveLinkedE8 {
 	public static void main(String[] args) {
-		LinkedList firstelement = new LinkedList();
-		firstelement.add(10);
-		firstelement.add(20);
-		firstelement.add(30);
-		firstelement.add(40);
-		firstelement.add(50);
-		System.out.println(firstelement);
-		firstelement.remove(0);
-		System.out.println("LinkedList after remove the first element: "+firstelement);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of elements: ");
+		int size = sc.nextInt();
+		System.out.println("Enter the elements: ");
+		LinkedList elements = new LinkedList();
+		for(int i=0;i<size;i++) {
+			elements.add(sc.nextInt());
+		}
+		System.out.println(elements);
+		elements.remove(0);
+		System.out.println("LinkedList after remove the first element: "+elements);
 	}
 }
