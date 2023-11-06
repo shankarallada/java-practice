@@ -33,9 +33,12 @@ public class UnionTwoLinkedListE14 {
 		System.out.println(list2);
 		for(int i=0;i<list2.size();i++) {
 			int num = (int) list2.get(i);
-			list1.add(num);
+			if(!list1.contains(num)) {
+				list1.add(num);
+			}
 		}
 		System.out.println(list1);
+		
 		sc.close();
 	}
 }
