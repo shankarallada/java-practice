@@ -35,6 +35,7 @@ public class ReplaceSubstringE7 {
 			list2.add(replaced);
 		}
 		System.out.println(list2);
+		sc.close();
 		
 	}
 

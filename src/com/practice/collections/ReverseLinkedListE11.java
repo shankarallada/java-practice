@@ -27,6 +27,7 @@ public class ReverseLinkedListE11 {
 			list2.add(reverse);
 		}
 		System.out.println("after reverse: "+list2);
+		sc.close();
 	}
 
 }

@@ -24,5 +24,6 @@ public class AddElementsLinkedE9 {
 		System.out.println(elements);
 		elements.add(6);
 		System.out.println("LinkedList after adding elements 6 at end: "+elements);
+		sc.close();
 	}
 }

@@ -23,5 +23,6 @@ public class RemoveLinkedE8 {
 		System.out.println(elements);
 		elements.remove(0);
 		System.out.println("LinkedList after remove the first element: "+elements);
+		sc.close();
 	}
 }
