@@ -1,6 +1,6 @@
 package com.practice.collections;
 
-import java.util.LinkedList;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 /*
@@ -18,24 +18,24 @@ public class CheckEqualTwoLinkedhashSetsE18 {
 		System.out.println("Enter the size of first elements: ");
 		int first =sc.nextInt();
 		System.out.println("Enter the elements: ");
-		LinkedList list1 = new LinkedList();
+		LinkedHashSet linkedHashSet = new LinkedHashSet();
 		for(int i=0;i<first;i++) {
-			list1.add(sc.next());
+			linkedHashSet.add(sc.next());
 		}
-		System.out.println(list1);
+		System.out.println(linkedHashSet);
 		System.out.println("Enter the size of second elements: ");
 		int second =sc.nextInt();
 		System.out.println("Enter the elements: ");
-		LinkedList list2 = new LinkedList();
+		LinkedHashSet linkedHashSet2 = new LinkedHashSet();
 		for(int i=0;i<first;i++) {
-			list2.add(sc.next());
+			linkedHashSet2.add(sc.next());
 		}
-		System.out.println(list2);
+		System.out.println(linkedHashSet2);
 		
-		if(list1.contains(list2)) {
-			System.out.println("LinkedHashSets are not equal");
+		if(linkedHashSet.equals(linkedHashSet2)) {
+			System.out.println("LinkedHashSets are  equal");
 		}else {
-			System.out.println("LinkedHashSets  are  equal");
+			System.out.println("LinkedHashSets are not equal");
 		}
 		
 		

@@ -16,10 +16,10 @@ public class AddElementsTreeSetE21 {
 		System.out.println("enter the size of elements: ");
 		int size = sc.nextInt();
 		System.out.println("enter the elements: ");
-		TreeSet list = new TreeSet();
+		TreeSet treeSet = new TreeSet();
 		for(int i=0;i<size;i++) {
-			list.add(sc.nextInt());
+			treeSet.add(sc.nextInt());
 		}
-		System.out.println(list);
+		System.out.println(treeSet);
 	}
 }

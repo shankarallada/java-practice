@@ -17,21 +17,21 @@ public class UniontwoLinkedHashSetE17 {
 		System.out.println("Enter the size of first elements: ");
 		int size = sc.nextInt();
 		System.out.println("Enter the elements: ");
-		LinkedHashSet list = new LinkedHashSet();
+		LinkedHashSet linkedHashSet = new LinkedHashSet();
 		for(int i = 0; i < size; i++) {
-			list.add(sc.nextInt());
+			linkedHashSet.add(sc.nextInt());
 		}
-		System.out.println(list);
+		System.out.println(linkedHashSet);
 		System.out.println("Enter the size of second elements: ");
 		int size2 = sc.nextInt();
 		System.out.println("Enter the elements: ");
-		LinkedHashSet list2 = new LinkedHashSet();
-		for (int i = 0; i < size; i++) {
-			list.add(sc.nextInt());
+		LinkedHashSet linkedHashSet2 = new LinkedHashSet();
+		for (int i = 0; i < size2; i++) {
+			linkedHashSet2.add(sc.nextInt());
 		}
-		System.out.println(list2);
-		list.add(list2);
-		System.out.println(list);
+		System.out.println(linkedHashSet2);
+		linkedHashSet.addAll(linkedHashSet2);
+		System.out.println("union: "+linkedHashSet);
 	}
 
 }

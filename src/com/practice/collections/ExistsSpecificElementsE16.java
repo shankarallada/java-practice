@@ -18,15 +18,15 @@ public class ExistsSpecificElementsE16 {
 		System.out.println("Enter the size of first elements: ");
 		int size = sc.nextInt();
 		System.out.println("Enter the elements: ");
-		LinkedHashSet list = new LinkedHashSet();
+		LinkedHashSet linkedHashSet = new LinkedHashSet();
 		for(int i = 0; i < size; i++) {
-			list.add(sc.next());
+			linkedHashSet.add(sc.next());
 		}
-		System.out.println(list);
+		System.out.println(linkedHashSet);
 		System.out.println("element to check: ");
 		String word = sc.next();
 		
-		if (list.contains(word)) {
+		if (linkedHashSet.contains(word)) {
 			System.out.println("element python exists in linkedhashset");
 		}else {
 			System.out.println("element python do not exists in linkedhashset");

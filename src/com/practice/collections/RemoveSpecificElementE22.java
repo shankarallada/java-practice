@@ -18,16 +18,16 @@ public class RemoveSpecificElementE22 {
 		System.out.println("Enter the size of elements: ");
 		int size = sc.nextInt();
 		System.out.println("Enter the elements: ");
-		TreeSet list = new TreeSet();
+		TreeSet treeSet = new TreeSet();
 		for(int i=0;i<size;i++) {
-			list.add(sc.next());
+			treeSet.add(sc.next());
 		}
-		System.out.println(list);
+		System.out.println(treeSet);
 		System.out.println("Enter to remove: ");
 		String remove =sc.next();
 		
-		list.remove(remove);
-		System.out.println(list);
+		treeSet.remove(remove);
+		System.out.println(treeSet);
 	}
 
 }

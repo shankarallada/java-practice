@@ -16,12 +16,12 @@ public class LargestElementTreesetE23 {
 		System.out.println("Enter the size of first elements: ");
 		int size = sc.nextInt();
 		System.out.println("Enter the elements: ");
-		TreeSet list = new TreeSet();
+		TreeSet treeSet = new TreeSet();
 		for(int i = 0; i < size; i++) {
-			list.add(sc.nextInt());
+			treeSet.add(sc.nextInt());
 		}
-		System.out.println(list);
-		System.out.println("largest element: "+list.last());
+		System.out.println(treeSet);
+		System.out.println("largest element: "+treeSet.last());
 		//System.out.println(list.first());
 		sc.close();
 	}
